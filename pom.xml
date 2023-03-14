@@ -3,9 +3,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<modules>
-		<module>common</module>
 		<module>service-base</module>
 		<module>service-core</module>
+		<module>pip-common</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -60,13 +60,13 @@
 			<dependency>
 				<groupId>com.baomidou</groupId>
 				<artifactId>mybatis-plus-boot-starter</artifactId>
-				<version>3.3.0</version>
+				<version>3.4.1</version>
 			</dependency>
 
 			<dependency>
 				<groupId>com.baomidou</groupId>
 				<artifactId>mybatis-plus-generator</artifactId>
-				<version>3.3.0</version>
+				<version>3.4.1</version>
 			</dependency>
 
 			<dependency>
@@ -87,11 +87,11 @@
 				<version>2.7.0</version>
 			</dependency>
 
-			<dependency>
-				<groupId>com.github.xiaoymin</groupId>
-				<artifactId>swagger-bootstrap-ui</artifactId>
-				<version>1.9.6</version>
-			</dependency>
+<!--			<dependency>-->
+<!--				<groupId>com.github.xiaoymin</groupId>-->
+<!--				<artifactId>swagger-bootstrap-ui</artifactId>-->
+<!--				<version>1.9.6</version>-->
+<!--			</dependency>-->
 			<dependency>
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-lang3</artifactId>
@@ -181,36 +181,32 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<optional>true</optional>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>hu.blackbelt.bundles.swagger-parser</groupId>
+			<artifactId>io.swagger.parser</artifactId>
+			<version>1.0.47_1</version>
+		</dependency>
 	</dependencies>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<excludes>
-						<exclude>
-							<groupId>org.projectlombok</groupId>
-							<artifactId>lombok</artifactId>
-						</exclude>
-					</excludes>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+<!--	<build>-->
+<!--		<plugins>-->
+<!--			<plugin>-->
+<!--				<groupId>org.springframework.boot</groupId>-->
+<!--				<artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--				<configuration>-->
+<!--					<excludes>-->
+<!--						<exclude>-->
+<!--							<groupId>org.projectlombok</groupId>-->
+<!--							<artifactId>lombok</artifactId>-->
+<!--						</exclude>-->
+<!--					</excludes>-->
+<!--				</configuration>-->
+<!--			</plugin>-->
+<!--		</plugins>-->
+<!--	</build>-->
 
 </project>
