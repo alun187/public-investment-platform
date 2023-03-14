@@ -1,36 +1,51 @@
-HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
-mvnw.cmd
-mvnw
+# Compiled class file
+*.class
+*.classpath
+*.factorypath
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
+# Log file
+*.log
+
+package-lock.json
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.exe
+#!documents/05、环境搭建/06、Docker部署Sentinel/资源/sentinel-dashboard/*.jar
+#!documents/05、环境搭建/07、Docker部署RocketMQ/资源/*.zip
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# IDE Files #
+*.iml
+.idea
+.idea/
 .project
 .settings
-.springBeans
-.sts4-cache
-.mvn
+target
+.DS_Store
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+mvnw
+mvnw.cmd
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+# temp ignore
+*.cache
+*.diff
+*.patch
+*.tmp
 
-### VS Code ###
-.vscode/
+# Maven ignore
+.flattened-pom.xml
