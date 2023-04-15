@@ -23,6 +23,7 @@
             <artifactId>pip-common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+
         <!--swagger-->
         <dependency>
             <groupId>io.springfox</groupId>

@@ -8,6 +8,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+/**
+ * @author cuidl
+ */
 @Configuration
 @EnableTransactionManagement
 @MapperScan("com.cuidl.pip.core.mapper")
