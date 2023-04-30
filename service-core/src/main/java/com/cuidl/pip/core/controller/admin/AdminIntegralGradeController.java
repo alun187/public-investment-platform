@@ -3,6 +3,7 @@ package com.cuidl.pip.core.controller.admin;
 import com.cuidl.pip.common.result.Result;
 import com.cuidl.pip.core.entity.IntegralGrade;
 import com.cuidl.pip.core.service.IIntegralGradeService;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import lombok.extern.slf4j.Slf4j;
@@ -21,6 +22,7 @@ import java.util.List;
  */
 @RestController
 @Slf4j
+@Api("积分等级管理")
 @RequestMapping("admin/core/integralGrade")
 public class AdminIntegralGradeController {
 
