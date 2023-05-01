@@ -31,10 +31,29 @@ public class Swagger2Config {
     private ApiInfo adminApiInfo(){
 
         return new ApiInfoBuilder()
-                .title("尚融宝后台管理系统-API文档")
-                .description("本文档描述了尚融宝后台管理系统接口")
+                .title("后台管理系统-API文档")
+                .description("本文档描述了后台管理系统接口")
                 .version("1.0")
-                .contact(new Contact("Helen", "http://atguigu.com", "55317332@qq.com"))
+                .contact(new Contact("cuidl", "http://cuidl.com", "482911313@qq.com"))
+                .build();
+    }
+
+    @Bean
+    public Docket webApiConfig(){
+        return new Docket(DocumentationType.SWAGGER_2)
+                .groupName("webApi")
+                .apiInfo(webApiInfo())
+                .select()
+                .paths(Predicates.and(PathSelectors.regex("/api/.*")))
+                .build();
+    }
+
+    private ApiInfo webApiInfo(){
+        return new ApiInfoBuilder()
+                .title("网站API文档")
+                .description("本文档描述了网站各个模块的接口的调用方式")
+                .version("1.6")
+                .contact(new Contact("cuidl", "http://cuidl.com", "482911313@qq.com"))
                 .build();
     }
 }
