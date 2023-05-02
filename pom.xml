@@ -7,6 +7,7 @@
         <module>service-core</module>
         <module>pip-common</module>
         <module>service-sms</module>
+        <module>service-oos</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
